@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './colors.css';
+import { Footer } from './components/footer/footer.js';
+import { Entries } from './components/Entries/entries.js';
+import { TabBar } from './components/tabBar/tab-bar.js';
+import { Form } from './components/Form/form.js';
+import { Header } from "./components/Header/header.js"
+import { Main } from "./components/Main/main.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+<Header/>
+<Main>
+<Form title1="Motto" title2="Notes" button="Create Element"/>
+<TabBar/>
+<Entries/>
+</Main>
+
+<Footer content={"SAM0 APP SAM0 0815"}></Footer>
+  </>)
 }
 
 export default App;
+ 
